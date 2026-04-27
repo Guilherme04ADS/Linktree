@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Linktree Hacker</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Fundo de partículas -->
+  <div id="particles-js"></div>
+
+  <!-- Conteúdo -->
+  <div class="container">
+    <img src="./assets/avatar.png" class="avatar">
+
+    <h1>Guilherme Dias</h1>
+    <p>Dev em evolução 🚀</p>
+
+    <a href="https://github.com/Guilherme04ADS" class="link">GitHub</a>
+    <a href="#" class="link">LinkedIn</a>
+    <a href="https://www.tiktok.com/@pardo_edits5" class="link">TikTok</a>
+  </div>
+
+  <!-- Script particles -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 100 },
+        color: { value: "#00ff99" },
+        size: { value: 2, random: true },
+        line_linked: {
+          enable: true,
+          distance: 120,
+          color: "#00ff99",
+          opacity: 0.4
+        },
+        move: {
+          speed: 1.5,
+          random: true
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "grab"
+          },
+          onclick: {
+            enable: true,
+            mode: "push"
+          }
+        },
+        modes: {
+          grab: {
+            distance: 150,
+            line_linked: { opacity: 1 }
+          },
+          push: {
+            particles_nb: 5
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
